@@ -1,12 +1,12 @@
 #include <stdio.h>
 
-#define MAX_TRIANGLE_ROWS 12
+#define MAX_TRIANGLE_ROWS 15
 
 void PrintTriangle(const int rows);
 
 int main(int argc, char **argv)
 {
-    for(int triangleRows = 2; triangleRows <= MAX_TRIANGLE_ROWS; triangleRows++)
+	for(int triangleRows = 2; triangleRows <= MAX_TRIANGLE_ROWS; triangleRows++)
     {
         PrintTriangle(triangleRows);
     }
@@ -26,11 +26,11 @@ void PrintTriangle(const int rows)
         int starPoint1 = middlePoint - shift;
         int starPoint2 = middlePoint + shift;
         
-        for(int rowPoint = 1; rowPoint <= columns + 1; rowPoint++)
+        for(int point = 1; point <= columns + 1; point++)
         {
             if(row < rows)
             {
-                if(rowPoint != starPoint1 && rowPoint != starPoint2)
+                if(point != starPoint1 && point != starPoint2)
                     printf("%c", space);
                 else
                     printf("%c", star);
