@@ -1,12 +1,12 @@
 #include <stdio.h>
 
-#define MAX_TRIANGLE_ROWS 10
+#define MAX_TRIANGLE_ROWS 110
 
 void PrintTriangle(const int rows);
 
 int main(int argc, char **argv)
 {
-	for(int triangleRows = 2; triangleRows <= MAX_TRIANGLE_ROWS; triangleRows++)
+    for(int triangleRows = 2; triangleRows <= MAX_TRIANGLE_ROWS; triangleRows++)
     {
         PrintTriangle(triangleRows);
     }
