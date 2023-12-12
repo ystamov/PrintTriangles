@@ -4,7 +4,7 @@ void PrintTriangle(const int rows);
 
 int main(int argc, char **argv)
 {
-	int triangleRows = 0;
+    int triangleRows = 0;
     printf("Enter the number of triangle rows you want: ");
     scanf("%d", &triangleRows);
     
