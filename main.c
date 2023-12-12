@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#define MAX_TRIANGLE_ROWS 110
+#define MAX_TRIANGLE_ROWS 12
 
 void PrintTriangle(const int rows);
 
